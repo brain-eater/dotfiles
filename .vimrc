@@ -27,10 +27,16 @@ call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 call plug#end()
 set laststatus=2
 set statusline+=%F
-let g:javascript_plugin_jsdoc = 1
+set list lcs=tab:\|\
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'Yggdroot/indentLine'
+call vundle#end()            " required
+filetype plugin indent on    " required

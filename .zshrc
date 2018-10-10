@@ -98,3 +98,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+source /Users/tilakpur/projects/js_practice/js_assignment/diamonds/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
