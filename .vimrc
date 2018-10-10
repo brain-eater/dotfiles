@@ -24,6 +24,7 @@ map <C-o> :NERDTreeToggle<CR>
 set updatetime=100
 set rtp+=/usr/local/opt/fzf
 call plug#begin()
+Plug 'bling/vim-bufferline'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
