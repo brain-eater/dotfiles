@@ -19,6 +19,8 @@ map <C-y> "*y
 imap cf <Esc>Oconst =function(){<Esc>)i}<Esc>o<Esc>(=Gf=
 imap cl console.log();<Esc>hi
 imap pv process.argv[2];<Esc>hi
+nmap <Leader>p <Plug>(Prettier)
+map <C-o> :NERDTreeToggle<CR>
 set updatetime=100
 set rtp+=/usr/local/opt/fzf
 call plug#begin()
@@ -31,5 +33,4 @@ Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 call plug#end()
 set laststatus=2
 set statusline+=%F
-map <C-o> :NERDTreeToggle<CR>
 let g:javascript_plugin_jsdoc = 1
