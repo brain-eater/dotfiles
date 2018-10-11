@@ -64,10 +64,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions k
+   zsh-syntax-highlighting  git zsh-autosuggestions 
 )
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -97,5 +95,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-source /Users/tilakpur/projects/js_practice/js_assignment/diamonds/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ source $ZSH/oh-my-zsh.sh
+
+[[ -s /Users/tilakpur/.autojump/etc/profile.d/autojump.sh ]] && source /Users/tilakpur/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+source /Users/tilakpur/autojump/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

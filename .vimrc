@@ -23,21 +23,19 @@ nmap <Leader>p <Plug>(Prettier)
 map <C-o> :NERDTreeToggle<CR>
 set updatetime=100
 set rtp+=/usr/local/opt/fzf
-call plug#begin()
-Plug 'bling/vim-bufferline'
-Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'airblade/vim-gitgutter'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-call plug#end()
 set laststatus=2
 set statusline+=%F
 set list lcs=tab:\|\
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'bling/vim-bufferline'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plugin 'Yggdroot/indentLine'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
