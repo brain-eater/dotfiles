@@ -11,7 +11,6 @@ set expandtab
 set softtabstop=2
 set tabstop=2
 set shiftwidth=2
-map <C-H> :nohl
 set foldmethod=indent " folding
 set foldnestmax=10   " fold anything with a max nest level of 10
 set nofoldenable     " Don't fold by default when opening a file
@@ -24,4 +23,5 @@ filetype off                  " required
 filetype plugin indent on    " required
 set conceallevel=1
 let g:indentLine_conceallevel=1
-
+map <C-t> f{lvf}hyO//to test <Esc>pjoassert.deepEqual(<Esc>pa(),);<Esc>o<Esc>j
+set directory=$HOME/.vim/swapfiles//

@@ -101,3 +101,5 @@ plugins=(
 [[ -s /Users/tilakpur/.autojump/etc/profile.d/autojump.sh ]] && source /Users/tilakpur/.autojump/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit -u
+
+alias zd="zip -r"
