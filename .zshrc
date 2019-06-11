@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH=${PATH}:/usr/local/mysql/bin
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/tilakpur/.oh-my-zsh"
 
@@ -9,7 +9,6 @@ export ZSH="/Users/tilakpur/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -63,9 +62,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-   zsh-syntax-highlighting git zsh-autosuggestions  
-)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -95,11 +94,9 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
- source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-[[ -s /Users/tilakpur/.autojump/etc/profile.d/autojump.sh ]] && source /Users/tilakpur/.autojump/etc/profile.d/autojump.sh
-
-autoload -U compinit && compinit -u
-
-alias zd="zip -r"
+export NVM_DIR="/Users/tilakpur/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
